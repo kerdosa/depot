@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Depot</title>
-  <%= stylesheet_link_tag :all %>
+  <title>Oil Shop</title>
+  <%= stylesheet_link_tag "scaffold" %>
+  <%= stylesheet_link_tag "depot", :media => "all" %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
-<body>
-
-<%= yield %>
-
+<body id="store">
+	<div id="banner">
+		<%= image_tag("logo.png") %>
+		<%= @page_title || "Engine Oil List" %>
+	</div>
+	<div id="columns">
+		<div id="side">
+			<a href="http://localhost:3000">Home</a><br />
+			<a href="http://localhost:3000/faq">Questions</a><br />
+			<a href="http://localhost:3000/news">News</a><br />
+			<a href="http://localhost:3000/contact">Contact</a><br />
+		</div>
+		<div id="main">
+			<%= yield %>
+		</div>
+	</div>
 </body>
 </html>
