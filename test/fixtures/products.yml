@@ -11,3 +11,16 @@ two:
   description: MyText
   image_url: MyString
   price: 9.99
+
+mobile:
+  title: Mobile
+  description: Mobile Description
+  image_url: mobile.png
+  price: 1.1
+
+gtx3:
+  title: GTX3
+  description: GTX3 Description
+  image_url: gtx3.png
+  price: 2.2
+  
